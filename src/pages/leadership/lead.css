@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+.leadership{
+    font-family: 'Fira Sans', sans-serif;
+    display: flex;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.leadership h1{
+    margin: 10px;
+}
+.head{
+    display: flex;
+    width: 95%;
+    position: relative;
+      max-width: 800px;
+      margin: auto;
+      background: #fff;
+      box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+    
+      border-radius: 25px;
+      height: 400px;
+    transition: all .3s;
+    justify-content: center;
+    align-items: center;
+    
+
+    @media screen and (max-width: 992px) {
+        max-width: 680px;
+            height: 400px;
+      }
+      
+      @media screen and (max-width: 860px) {
+        min-height: 500px;
+        height: auto;
+        margin: 180px 0px 0px 0px;
+        flex-direction:column;
+      }
+      @media screen and (max-widtht: 700px)  {
+        align-items:flex-end;
+      }
+      
+      @media screen and (max-height: 500px) and (min-width: 992px) {
+            height: 350px;
+      } 
+}
+
+.pichead{
+    position: absolute;
+    
+  
+    background-image: url("../../../public/image/production.jpg");
+    background-position: right 50% bottom 60%;
+    width: 75%;
+    border-radius: 25px;
+      height: 300px;
+      max-width: 300px;
+      margin: auto;
+      top: 12%;
+      left: -10%    ;
+      box-shadow: 4px 13px 30px 1px rgb(2, 2, 2);
+
+      @media screen and (max-width: 860px) {
+            top:-30%;
+            left:13%;
+            max-width: 500px;
+            height: 250px;
+            
+            
+      } 
+     
+      
+}
+
+
+.info{
+    display:block;
+    height: 70%;
+    width: 60%;
+  
+
+  
+      
+      
+}
+.name{
+    padding:20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #0d0925;
+    
+   
+}
+.about_me{
+   
+    text-align: justify;
+    color: #4e4a67;
+  
+    line-height: 1.1em;
+  
+}
+.helpercon{
+    display:block;
+    width: 30%;
+    height: 40%;
+
+    @media screen and (max-width: 860px) {
+        height:60%;
+    }
+}
