@@ -20,13 +20,15 @@
     top: 50%;
     left: 50%;
     @media screen and (max-width:700px) {
-        height:100%;
+        height:80%;
+        padding: 1%;
     }
+    
   }
   
   form {
     background: rgba(255, 255, 255, 0.3);
-    padding: 3em;
+    padding: 1em;
    
     display: flex;
     flex-direction: column;
@@ -42,6 +44,11 @@
     text-align: center;
     position: relative;
     transition: all 0.2s ease-in-out;
+    @media screen and (max-width:386px) {
+      height:100%;
+      padding: 1%;
+  }
+    
     
   }
   form p {
@@ -96,6 +103,11 @@
     margin-top: 10px;
     width: 150px;
     font-size: 1rem;
+    @media (max-width:353px) {
+      margin-top: 97px;
+    width: 150px;
+    font-size: 1rem;
+    }
   }
   form input[type=button]:hover {
     cursor: pointer;
@@ -130,6 +142,37 @@
   .head1{
     position: absolute;
     top: 15%;
+    @media (max-width:692px) {
+      top:7%;
+    }
+    @media (max-width:569px) {
+      
+      top:9%;
+    }
+    @media (max-width:474px) {
+     
+      top:10%;
+    }
+  }
+  .head1 h1{
+    @media (max-width:569px) {
+      
+      font-size: 1.5em;
+    }
+    @media (max-width:474px) {
+     
+      font-size: 1em;
+    }
+  }
+  .head1 p{
+    @media (max-width:569px) {
+      
+      font-size: 1em;
+    }
+    @media (max-width:474px) {
+     
+      font-size: 0.8em;
+    }
   }
   .drop {
     background: rgba(255, 255, 255, 0.3);
@@ -154,6 +197,9 @@
     width: 80px;
     bottom: 30px;
     right: 10px;
+    @media (max-width:370px) {
+      display:none ;
+    }
   }
   .drop-3 {
     height: 100px;

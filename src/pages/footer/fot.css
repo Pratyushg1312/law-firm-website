@@ -5,6 +5,11 @@
     background-color: rgb(48, 48, 48);
     margin-top: 0px;
     padding-bottom:40px ;
+    @media (max-width:450px) {
+        padding: 2px;
+        font-size: 0.8em;
+        
+    }
     
 }
 .about p , .properties-d p{
@@ -21,9 +26,17 @@ p{
     padding-top: 30px;
     padding-left: 60px;
     padding-right:60px ;
+    @media (max-width:450px) {
+        padding: 0;
+        
+        grid-auto-flow: row;
+    }
 }
 .about , .properties-d{
     padding: 20px;
+    @media (max-width:450px) {
+    padding: 2px;
+    }
 }
 .ribbon{
     display: flex;
@@ -35,6 +48,9 @@ p{
    
     padding-left: 60px;
     padding-right:60px ;
+    @media (max-width:450px) {
+        padding: 0;
+    }
 
 }
 .ribbon p{
@@ -44,6 +60,11 @@ p{
     margin-top: 10px;
     font-size: large;
     cursor: pointer;
+    @media (max-width:450px) {
+        font-size: 0.8rem;
+        
+    }
+      
 
 }
 
@@ -54,7 +75,14 @@ p{
     padding-left: 80px;
     padding-right:80px ;
     padding-top: 30px;
+    @media (max-width:450px) {
+        padding: 0;
+        padding-top: 20px;
+    }
 }
 .discl p{
     font-size: small;
+    @media (max-width:450px) {
+        font-size: 0.95em;
+    }
 }

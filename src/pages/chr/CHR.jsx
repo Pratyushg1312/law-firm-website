@@ -6,7 +6,7 @@ export const CHR = () => {
       <div className="head1">
 
       <h1>Company Health Report (CHR)</h1>
-      <p style={{paddingTop:"20px"}}>Letter of on become he tended active enable to.<br/>Vicinity relation sensible sociable surprise screened no up as.</p>
+      <p >Letter of on become he tended active enable to.<br/>Vicinity relation sensible sociable surprise screened no up as.</p>
       
       </div>
         <div class="container container1">

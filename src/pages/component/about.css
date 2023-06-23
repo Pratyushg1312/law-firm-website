@@ -1,0 +1,19 @@
+.about{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.about h1{
+    padding-bottom: 10px;
+}
+.cont{
+    display: flex;
+    width: 60%;
+      padding-bottom: 10px;
+}
+
+
+.cont p{
+    color: black;
+    text-align:justify;
+}

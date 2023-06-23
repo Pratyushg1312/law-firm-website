@@ -109,7 +109,7 @@ export const Offering = () => {
     {
       id: 5,
       ele: <AiFillDollarCircle />,
-      head: "Foreign Investment /<br/>RBI Matters Advisory",
+      head: "Foreign Investment /RBI Matters Advisory",
       head2: "Advisory / Certifications / Compliances / Approvals for FDI / ODI / ECB transactions",
       detail: [
 
@@ -176,8 +176,8 @@ export const Offering = () => {
           {data.map(i=>(
 
               <>
-              <div class="card" key={i.id} onClick={() => { setPop(true); setPoph(i.head); setPopid(i.id); setDetail(i.detail) }}>
-          <div class="card-content">
+              <div class="card" key={i.id} >
+          <div class="card-content"onClick={() => { setPop(true); setPoph(i.head); setPopid(i.id); setDetail(i.detail) }}>
             <div class="card-image">
               <i class="fa-duotone fa-person-from-portal">{i.ele}</i>
             </div>
@@ -186,6 +186,7 @@ export const Offering = () => {
                 <div class="card-info-title">
                   <h3>{i.head}</h3>
                   <h4>{i.head2}</h4>
+                  <p >view more</p>
                 </div>
               </div>
             </div>

@@ -83,7 +83,10 @@
     height: 70%;
     width: 60%;
   
-
+@media (max-width:860px) {
+    width:80%;
+    
+}
   
       
       
@@ -102,6 +105,11 @@
     color: #4e4a67;
   
     line-height: 1.1em;
+    @media (max-width:420px) {
+        font-size: 0.7em;
+        
+    }
+      
   
 }
 .helpercon{
