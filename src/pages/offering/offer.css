@@ -6,8 +6,8 @@
 
 
 :root {
-    --bg-color: rgb(0, 0, 0);
-    --card-color: rgb(23, 23, 23);
+    --bg-color: #FA2742;
+    --card-color: #6d1420;
   }
   
   .offering {
@@ -34,7 +34,7 @@
    
   }
   .card-info-title p{
-    color:rgb(66, 66, 67);
+    color:rgb(228, 23, 37);
     padding-top: 12px;
     font-family: "Rubik", sans-serif;
     font-weight: bold;
@@ -43,14 +43,14 @@
     
   }
   .card-info-title p:hover{
-    color:rgb(255, 255, 255);
+    color:#E5DECC;
   }
   #cards:hover > .card::after {
     opacity: 1;
   }
   
   .card {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(251, 202, 202, 0.468);
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -81,7 +81,7 @@
   .card::before {
     background: radial-gradient(
       800px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.06),
+      rgb(255, 113, 113),
       transparent 40%
     );
     z-index: 3;
@@ -90,7 +90,7 @@
   .card::after {  
     background: radial-gradient(
       600px circle at var(--mouse-x) var(--mouse-y), 
-      rgba(255, 255, 255, 0.4),
+      rgba(255, 113, 113, 0.871),
       transparent 40%
     );
     z-index: 1;
@@ -111,7 +111,7 @@
   /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
   
   h1,p, h2, h3, h4, span {
-    color: rgb(240, 240, 240);
+    color: #E5DECC  ;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     margin: 0px;

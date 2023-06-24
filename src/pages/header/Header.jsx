@@ -1,96 +1,146 @@
-import React,{useState,useRef, useEffect} from 'react'
-import { NavLink, useNavigate} from 'react-router-dom'
+import React, { useState, useRef, } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
 import './header.css'
 
 export const Header = () => {
 
   const [checked, setChecked] = useState();
+  const [widdth, setwidth] = useState("108px");
+  const [lefft, setleft] = useState("20px");
   const chkbox = useRef();
-  useEffect(() => {
- 
-    let marker = document.querySelector(".marker");
-  let item = document.querySelectorAll("nav a");
-  let act=document.querySelector(".active");
+  const pro = useRef();
+  const off = useRef();
+  const lead = useRef();
+  const con = useRef();
+
+
+  // useEffect(() => {
+
+
+  //   console.log(window.scrollY);
+
+  //   return () => {
+
+  //   }
+  // }, [window.onpointermove])
+
   function indicator(e) {
-    if(window.innerWidth > 640)
-    {
 
-      marker.style.left = e.offsetLeft + "px";
       
-        marker.style.width = e.offsetWidth + "px";
-    }
-    
+        
+        setleft(e.current.offsetLeft + "px");
+        setwidth(e.current.offsetWidth + "px");
+      
+
+
+    scrol(e.current.id);
+
   }
-  
+  function scrol(el) {
 
-  item.forEach((link) => {
-   
+    if (el === 'prolouge') {
+      window.scrollTo({
+        top: 80,
 
-    
-    if(link === act)
-    {
-      indicator(link);
+        behavior: "smooth",
+      });
     }
 
+    if (el === 'offering') {
+      window.scrollTo({
+        top: 750,
 
-    
-  }, [])
+        behavior: "smooth",
+      });
+    }
+    if (el === 'leadership') {
+      window.scrollTo({
+        top: 1980,
+
+        behavior: "smooth",
+      });
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // const act=useRef();
   // console.log(act);
 
 
 
-    
-});
 
 
 
 
-  
+
+
+
   return (
     <>
-    <input ref={chkbox}
-       
-       checked={checked} type="checkbox" id="nav-tog" />
-     <label for="nav-tog" class="nav-tog-lab" onClick={()=>{setChecked(!checked)}}>
-       <span class="line"></span>
-       <span class="line"></span>
-       <span class="line"></span>
-     </label>
-     <div className="header">
-     <div className="logo" onClick={useNavigate("/")}>
 
-<img id='lognav' src="./image/logogc.png" alt="Gupta Corporation" />
+      <div className="headerextend">
+         
 
-</div>
-     <nav>
-        <div class="marker"></div>
-        <ul>
-            
+        <img id='lognav' src="./image/logoonly.png" alt="Gupta Corporation" />
+
+      </div>
+      <input ref={chkbox}
+
+        checked={checked} type="checkbox" id="nav-tog" />
+      <label for="nav-tog" class="nav-tog-lab" onClick={() => { setChecked(!checked) }}>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </label>
+      <div className="header">
+        <div className="logo" >
+          
+          {  (window.innerWidth <= 787)? <img id='lognav' src="./image/logogcp.png" alt="Gupta Corporation" />:<img id='lognav' src="./image/logoonly.png" alt="Gupta Corporation" />
+}
+          
+
+        </div>
+        <nav>
+          <div class="marker" style={{ width: widdth, left: lefft }}></div>
+          <ul>
+
             <li>
-              <NavLink to="/prolouge" onClick={(window.innerWidth >=640)?()=>{}:()=>{setChecked(!checked)}}>Prolounge</NavLink >
+              <NavLink ref={pro} id='prolouge' to="" on sc onClick={(window.innerWidth >= 640) ? () => { indicator(pro) } : () => { setChecked(!checked) }}>Prolounge</NavLink >
             </li>
 
             <li>
-              <NavLink to="/offering" onClick={()=>{setChecked(!checked)}}>Offering</NavLink>
+              <NavLink ref={off} id='offering' to="" onClick={() => { setChecked(!checked); indicator(off) }}>Offering</NavLink>
             </li>
             <li>
-              <NavLink to="/leadership" onClick={()=>{setChecked(!checked)}}>Leadership</NavLink>
+              <NavLink ref={lead} id='leadership' to="" onClick={() => { setChecked(!checked); indicator(lead) }}>Leadership</NavLink>
             </li>
-           
-        <li>
-        <NavLink className='chhr' to="/chr"  onClick={()=>{setChecked(!checked)}}
-          style={({ isActive }) => ({
-            border: isActive ? "none" : "none",
-          })}
-        ><button className='chr' >Contact Us</button></NavLink>
+
+            <li>
+              <NavLink ref={con} className='chhr' to="/chr" onClick={() => { setChecked(!checked); indicator(con) }}
+                style={({ isActive }) => ({
+                  border: isActive ? "none" : "none",
+                })}
+              ><button className='chr' >Contact Us</button></NavLink>
 
 
-      </li>
+            </li>
 
-    </ul>
-      </nav>
-     </div>
+          </ul>
+        </nav>
+      </div>
     </>
   )
 }

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
    
-    background-color: rgb(48, 48, 48);
+    background-color:#E8EAE3;;
     margin-top: 0px;
     padding-bottom:40px ;
     @media (max-width:450px) {
@@ -12,9 +12,10 @@
     }
     
 }
-.about p , .properties-d p{
+.aboutu p , .properties-d p{
     margin-bottom: 10px;
     font-family:'Times New Roman', Times, serif;
+    color: black;
 }
 p{
     font-family:'Times New Roman', Times, serif;
@@ -32,7 +33,7 @@ p{
         grid-auto-flow: row;
     }
 }
-.about , .properties-d{
+.aboutu , .properties-d{
     padding: 20px;
     @media (max-width:450px) {
     padding: 2px;
@@ -43,7 +44,7 @@ p{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
-    background-color: #000000;
+    background-color: #FA2742;
   
    
     padding-left: 60px;
@@ -81,6 +82,7 @@ p{
     }
 }
 .discl p{
+    color: black;
     font-size: small;
     @media (max-width:450px) {
         font-size: 0.95em;

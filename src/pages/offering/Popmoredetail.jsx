@@ -1,13 +1,10 @@
 
-import React, { useContext, useEffect } from 'react'
+import React from 'react'
 import {AiFillCloseCircle} from "react-icons/ai"
 
 
 import "./popmore.css"
 
-
-
-import { useState } from 'react'
 const Popmoredetail = (props) => {
 
 
@@ -28,7 +25,7 @@ const Popmoredetail = (props) => {
                     </button>
                     <label style={{position:"absolute",
     top: "16px",
-    right: "16px"}} htmlFor="closebtn"><AiFillCloseCircle style={{color:'white'
+    right: "16px"}} htmlFor="closebtn"><AiFillCloseCircle style={{color:'#FA2742'
     }} /></label>
 
                     <div className="bodyyy">

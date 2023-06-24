@@ -8,7 +8,10 @@ import { About } from '../component/About'
 export const Home = () => {
   return (
     <div className="home">
-      
+      <Prologue/>
+      <Offering/>
+      <About/>
+      <Leadership/>
     </div>
   )
 }

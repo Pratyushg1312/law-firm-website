@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div className="footercon">
       <div className="uppersection">
-        <div className="about">
+        <div className="aboutu">
           <p> Gupta Corporation</p>
           <p>GC  is an integrated Corporate Secretarial & Legal Advisory firm helping Start-ups & Businesses in setting-up Good Corporate Governance.</p>
 

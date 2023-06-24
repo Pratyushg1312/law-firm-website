@@ -22,7 +22,7 @@
     padding: 32px;
     width: 80%;
     /* max-width: 640px; */
-    background: rgb(36, 35, 35);
+    background:  #E8EAE3;;
   border-radius: 8px;
     box-shadow: 3px 4px 20px 20px #3a393929;
   @media (max-width:600px) {
@@ -43,6 +43,7 @@
 
 .bodyyy h2 {
     padding: 25px;
+    color: #FA2742;
     text-decoration-line: underline;
     @media (max-width:600px) {
        font-size: small;
@@ -51,7 +52,7 @@
 
 }
 .bodyyy p{
-    color: rgb(156, 156, 156);
+    color: rgb(0, 0, 0);
     text-align: justify;
     padding-right: 2px;
     @media (max-width:600px) {

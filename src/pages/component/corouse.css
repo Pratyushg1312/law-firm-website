@@ -13,8 +13,8 @@
     z-index: -1;
     background: conic-gradient(
       from 180deg at 50% 50%,
-      #ffffff 0deg,
-      #000000 360deg
+      #E8EAE3 0deg,
+      #FA2742 360deg
     );
     animation: rotate-gradient 7s linear infinite;
   }
