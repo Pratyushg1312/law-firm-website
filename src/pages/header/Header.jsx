@@ -1,31 +1,32 @@
-import React, { useState, useRef, } from 'react'
-import { NavLink, useNavigate } from 'react-router-dom'
+import React, { useEffect,useState, useRef, useContext, } from 'react'
+import { NavLink} from 'react-router-dom'
 import './header.css'
+// import { AuthContext } from '../../context/Authcontext';
 
 export const Header = () => {
 
   const [checked, setChecked] = useState();
   const [widdth, setwidth] = useState("108px");
-  const [lefft, setleft] = useState("20px");
+  const [lefft, setleft] = useState("60px");
   const chkbox = useRef();
   const pro = useRef();
   const off = useRef();
   const lead = useRef();
   const con = useRef();
-
-
+  
   // useEffect(() => {
-
-
-  //   console.log(window.scrollY);
-
-  //   return () => {
-
-  //   }
-  // }, [window.onpointermove])
-
-  function indicator(e) {
-
+    
+    
+    //   console.log(window.scrollY);
+    
+    //   return () => {
+      
+      // const data =useContext(AuthContext)
+      //   }
+      // }, [window.onpointermove])
+      
+      function indicator(e) {
+        
       
         
         setleft(e.current.offsetLeft + "px");
@@ -100,10 +101,10 @@ export const Header = () => {
       <input ref={chkbox}
 
         checked={checked} type="checkbox" id="nav-tog" />
-      <label for="nav-tog" class="nav-tog-lab" onClick={() => { setChecked(!checked) }}>
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
+      <label htmlFor="nav-tog" className="nav-tog-lab" onClick={() => { setChecked(!checked) }}>
+        <span className="line"></span>
+        <span className="line"></span>
+        <span className="line"></span>
       </label>
       <div className="header">
         <div className="logo" >
@@ -114,11 +115,11 @@ export const Header = () => {
 
         </div>
         <nav>
-          <div class="marker" style={{ width: widdth, left: lefft }}></div>
+          <div className="marker" style={{ width: widdth, left: lefft }}></div>
           <ul>
 
             <li>
-              <NavLink ref={pro} id='prolouge' to="" on sc onClick={(window.innerWidth >= 640) ? () => { indicator(pro) } : () => { setChecked(!checked) }}>Prolounge</NavLink >
+              <NavLink ref={pro} id='prolouge' to=""  onClick={(window.innerWidth >= 640) ? () => { indicator(pro) } : () => { setChecked(!checked) }}>Prolouge</NavLink >
             </li>
 
             <li>
@@ -151,7 +152,7 @@ export const Header = () => {
  <input ref={chkbox}
        
         checked={checked} type="checkbox" id="nav-tog" />
-      <label for="nav-tog" class="nav-tog-lab" onClick={()=>{setChecked(!checked)}}>
+      <label for="nav-tog" className="nav-tog-lab" onClick={()=>{setChecked(!checked)}}>
         <span class="line"></span>
         <span class="line"></span>
         <span class="line"></span>

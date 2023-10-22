@@ -175,15 +175,15 @@ export const Offering = () => {
 
           {data.map(i=>(
 
-              <>
-              <div class="card" key={i.id} >
-          <div class="card-content"onClick={() => { setPop(true); setPoph(i.head); setPopid(i.id); setDetail(i.detail) }}>
-            <div class="card-image">
-              <i class="fa-duotone fa-person-from-portal">{i.ele}</i>
+           
+              <div className="card"  key={i.id}>
+          <div className="card-content"  onClick={() => { setPop(true); setPoph(i.head); setPopid(i.id); setDetail(i.detail) }}>
+            <div className="card-image">
+              <i className="fa-duotone fa-person-from-portal">{i.ele}</i>
             </div>
-            <div class="card-info-wrapper">
-              <div class="card-info">
-                <div class="card-info-title">
+            <div className="card-info-wrapper" >
+              <div className="card-info">
+                <div className="card-info-title">
                   <h3>{i.head}</h3>
                   <h4>{i.head2}</h4>
                   <p >view more</p>
@@ -192,7 +192,7 @@ export const Offering = () => {
             </div>
           </div>
         </div>
-              </>
+            
 
           ))}
 
